@@ -86,7 +86,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 4.3.4)
   just-the-docs (= 0.10.1)
-  jekyll-theme-so-simple (~> 3.2)
+  
 
 BUNDLED WITH
    2.5.9
