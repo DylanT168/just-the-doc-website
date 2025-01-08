@@ -1,2 +1,4 @@
 ---
 title: Portfolio
+layout: home
+---
