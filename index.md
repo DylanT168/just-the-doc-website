@@ -1,5 +1,6 @@
 ---
 title: Home
+title: Portfolio
 layout: home
 ---
 
