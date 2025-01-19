@@ -8,6 +8,8 @@ Description: This audioplayer uses a Raspberry pi, mine is a 4 model B, a python
 <hr>
 What you need:  
 
+- 16 or 32 GB micro SD card
+
 - A Raspberry Pi
 
 -  A monitor that supports HDMI
