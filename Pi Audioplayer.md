@@ -14,7 +14,7 @@ Some History first:
 
 - We made a python script in Raspberry PI's OS to run directly in the OS itself which performed almost the same function but did not require another monitor or PI.
 <hr>
-What you need:  
+What you need to recreate this project:  
 
 -  16 or 32 GB micro SD card
 
