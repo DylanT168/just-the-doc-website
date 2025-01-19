@@ -52,24 +52,24 @@ First:
 4. Copy this python code and save it as a .py file using Thonny(Built in python IDE)
 
    ```python
-# The code
+
 import RPi.GPIO as GPIO
 import subprocess
 import time
 import os
 
-# Pin configuration
+
 PLAY_PAUSE_BUTTON_PIN = 18
 NEXT_TRACK_BUTTON_PIN = 23
 music_folder = "/home/dylan/Downloads/Songs"  # Path to folder with .mp3 files
 
-# Playback state
+
 is_playing = False
 current_track_index = 0
 tracks = []
 vlc_process = None
 
-# GPIO setup
+
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(PLAY_PAUSE_BUTTON_PIN, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 GPIO.setup(NEXT_TRACK_BUTTON_PIN, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
@@ -130,10 +130,10 @@ load_tracks()
 
 start_vlc()
 
-# Start playing the first track
+
 play_track(current_track_index)
 
-# Detects button presses with debounce
+
 GPIO.add_event_detect(PLAY_PAUSE_BUTTON_PIN, GPIO.RISING, callback= toggle_play_pause, bouncetime=100)
 GPIO.add_event_detect(NEXT_TRACK_BUTTON_PIN, GPIO.RISING, callback= next_track, bouncetime=100)
 
