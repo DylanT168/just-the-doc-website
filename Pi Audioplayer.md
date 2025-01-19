@@ -37,6 +37,18 @@ What you need to recreate this project:
 - A python script to read button inputs
 <hr>
 
+First:
+ 
+ 1. Flash the Raspberry OS onto your SD Card using something like the PI imager, Rufus, Balena Etcher
+
+ 2. Get a monitor that supports HDMI input and plug in a HDMI cable into both the back of the monitor and into the Raspberry Pi
+
+ 3. Wait for the OS to load and if not already installed, install pygame and rpi.gpio
+
+   - Check whether it is installed already using (pip3 show pygame) If not, To install pygame, type (sudo apt install python3-pygame into the terminal)
+   
+   - Do the same with rpi.gpio (pip3 show RPi.GPIO) If not, To install RPi.GPIO, type (sudo apt install python3-rpi.gpio)
+
 
   
   
