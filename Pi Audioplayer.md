@@ -8,10 +8,15 @@ Description: This audioplayer uses a Raspberry pi, mine is a 4 model B, a python
 <hr>
 What you need:  
 - A Raspberry Pi  
+
 - Male to Female jumper wires  
+
 - Breadboard  
+
 - 5V power supply  
+
 - 2 push buttons  
+
 - A python script to read button inputs
 <hr>
 
