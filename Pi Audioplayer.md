@@ -26,7 +26,9 @@ What you need to recreate this project:
 
 -  USB-C to power
 
-- Male to Female jumper wires  
+- Male to Female jumper wires
+
+- Regular jumper wires
 
 - Breadboard  
 
