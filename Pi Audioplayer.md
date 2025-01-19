@@ -60,7 +60,7 @@ import os
 # Pin configuration
 PLAY_PAUSE_BUTTON_PIN = 18
 NEXT_TRACK_BUTTON_PIN = 23
-music_folder = "/home/dylan/Downloads/Songs"  # Path to folder with .mp3 files
+music_folder = "/path/to/your/folder"  # Path to folder with .mp3 files
 
 # Playback state
 is_playing = False
