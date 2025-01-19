@@ -8,7 +8,13 @@ Description: This audioplayer uses a Raspberry pi, mine is a 4 model B, a python
 <hr>
 What you need:  
 
-- A Raspberry Pi  
+- A Raspberry Pi
+
+-  A monitor that supports HDMI
+
+-  HDMI Cable
+
+-  USB-C to power
 
 - Male to Female jumper wires  
 
