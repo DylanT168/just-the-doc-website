@@ -51,8 +51,7 @@ First:
 
 4. Copy this python code and save it as a .py file using Thonny(Built in python IDE)
 
-   ```python
-
+```python
 import RPi.GPIO as GPIO
 import subprocess
 import time
@@ -148,7 +147,7 @@ finally:
     if vlc_process:
         vlc_process.terminate()
     GPIO.cleanup()
-  ```
+ ```
 
 
   
