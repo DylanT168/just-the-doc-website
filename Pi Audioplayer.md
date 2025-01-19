@@ -148,7 +148,18 @@ finally:
         vlc_process.terminate()
     GPIO.cleanup()
  ```
+5. Grab your breadboard, buttons, jumper wires, power supply
 
+ - Grab two female to male jumper wires and connect the male to 1 leg of the button, and the female to pin 18 on the Raspberry PI board (This is your "Play/Pause" button. (You can type (pinout) in the PI's terminal to see the pin configuration for your Raspberry PI). Do the same with the other button but instead of the female side connected to pin 18, connect it to pin 23 (This is your "Next Track" button).
+
+ - Next, grab 2 regular jumper wires(not male to female) and connect one side to ground and one side to another leg on the button. Do this for both buttons.
+ 
+ - Resistors are unnecessary because the code has internal pull down resistors
+ 
+```python
+GPIO.setup(PLAY_PAUSE_BUTTON_PIN, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+GPIO.setup(NEXT_TRACK_BUTTON_PIN, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+```
 
   
   
