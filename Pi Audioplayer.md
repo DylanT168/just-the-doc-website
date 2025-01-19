@@ -35,6 +35,8 @@ What you need to recreate this project:
 - 2 push buttons  
 
 - A python script to read button inputs
+
+- Speakers with an audio jack or headphones
 <hr>
 
 First:
