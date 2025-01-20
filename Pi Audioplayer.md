@@ -49,8 +49,6 @@ First:
 
 3. Wait for the OS to load and open terminal. If not already installed, install pygame and rpi.gpio
 
-   - Check whether it is installed already using (pip3 show pygame) first. If not, To install pygame, type (sudo apt install python3-pygame)
-   
    - Do the same with rpi.gpio (pip3 show RPi.GPIO) first. If not, To install RPi.GPIO, type (sudo apt install python3-rpi.gpio)
 
 4. Copy this python code and save it as a .py file using Thonny(Built in python IDE)
