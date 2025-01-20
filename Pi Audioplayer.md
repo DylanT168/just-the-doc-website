@@ -164,7 +164,7 @@ finally:
 GPIO.setup(PLAY_PAUSE_BUTTON_PIN, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 GPIO.setup(NEXT_TRACK_BUTTON_PIN, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 ```
-6. Get some speakers with a audiojack (3.5 mm) and plug it into the Raspberry Pi and download your favorite mp3's, store them all in one folder and set the path to that "folder".
+6. Get some speakers with a audiojack ( Most commonly 3.5 mm but can be any) and plug it into the Raspberry Pi and download your favorite mp3's, store them all in one folder and set the path to that "folder".
 
 7. Enjoy! Nice and easy, Right? You can always add more features and buttons if you want but this is just a base to at least get it working, Modify the code however you want if it doesn't work the way it is intended.
 
