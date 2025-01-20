@@ -8,11 +8,11 @@ Description: This audioplayer uses a Raspberry pi, mine is a 4 model B, a python
 <hr>
 Some History first:
 
-- At first, we got a Raspberry PI (RPi for short) named "Michael" from our teacher Mr.Andrade but turns out, it didn't work because its SD card was not showing up as a storage device during the Raspberry PI imager process. The reasoning behind it not showing up was something I am not sure. However at home, I had a Raspberry Pi 4 model B that already had a 32 GB SD card with the OS on it already so I brought it to school and we used that instead meaning we bypass the "imager" process and it was named Michael 2.0.
+- At first, we got a Raspberry Pi (RPi for short) named "Michael" from our teacher Mr.Andrade but turns out, it didn't work because its SD card was not showing up as a storage device during the Raspberry Pi imager process. The reasoning behind it not showing up was something I am not sure. However at home, I had a Raspberry Pi 4 model B that already had a 32 GB SD card with the OS on it already so I brought it to school and we used that instead meaning we bypass the "imager" process and it was named Michael 2.0.
 
-- Me and my partner then tried installing Volumio (An operating system made to be controlled headless(no monitor) through the PI's IP address on a web interface on a seperate device and specifically designed for audio and music playing anywhere) We realized that even though I could access the web interface(IP address worked) We need another monitor and another Raspberry PI because only 1 SD Card can be inserted into the Raspberry Pi at a time and a SD card can't more than 1 operating system on it. Switching between each SD card did not work because we need to be on Volumio OS to run the audio player but also need to be on the Raspberry PI OS at the same time to run the python script in the first place. Impossible to do using 1 monitor and 1 Raspberry Pi. So we scratched that idea and used Raspberry PI and VLC to complete it.
+- Me and my partner then tried installing Volumio (An operating system made to be controlled headless(no monitor) through the Pi's IP address on a web interface on a seperate device and specifically designed for audio and music playing anywhere) We realized that even though I could access the web interface(IP address worked) We need another monitor and another Raspberry PI because only 1 SD Card can be inserted into the Raspberry Pi at a time and a SD card can't more than 1 operating system on it. Switching between each SD card did not work because we need to be on Volumio OS to run the audio player but also need to be on the Raspberry Pi OS at the same time to run the python script in the first place. Impossible to do using 1 monitor and 1 Raspberry Pi. So we scratched that idea and used Raspberry PI and VLC to complete it.
 
-- We made a python script in Raspberry PI's OS to run directly in the OS itself which performed almost the same function but did not require another monitor or PI.
+- We made a python script in Raspberry Pi's OS to run directly in the OS itself which performed almost the same function but did not require another monitor or Pi.
 <hr>
 What you need to recreate this project:  
 
@@ -43,7 +43,7 @@ What you need to recreate this project:
 
 First:
  
-1. Flash the Raspberry OS onto your SD Card using something like the PI imager, Rufus, Balena Etcher
+1. Flash the Raspberry OS onto your SD Card using something like the Pi imager, Rufus, Balena Etcher
 
 2. Get a monitor that supports HDMI input and plug in a HDMI cable into both the back of the monitor and into the Raspberry Pi
 
@@ -154,7 +154,7 @@ finally:
  ```
 5. Grab your breadboard, buttons, jumper wires, power supply
 
- - Grab two female to male jumper wires and connect the male to 1 leg of the button, and the female to pin 18 on the Raspberry PI board (This is your "Play/Pause" button. (You can type (pinout) in the PI's terminal to see the pin configuration for your Raspberry PI). Do the same with the other button but instead of the female side connected to pin 18, connect it to pin 23 (This is your "Next Track" button).
+ - Grab two female to male jumper wires and connect the male to 1 leg of the button, and the female to pin 18 on the Raspberry PI board (This is your "Play/Pause" button. (You can type (pinout) in the PI's terminal to see the pin configuration for your Raspberry Pi). Do the same with the other button but instead of the female side connected to pin 18, connect it to pin 23 (This is your "Next Track" button).
 
  - Next, grab 2 regular jumper wires(not male to female) and connect one side to ground and one side to another leg on the button. Do this for both buttons.
  
@@ -164,7 +164,7 @@ finally:
 GPIO.setup(PLAY_PAUSE_BUTTON_PIN, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 GPIO.setup(NEXT_TRACK_BUTTON_PIN, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 ```
-6. Get some speakers with a audiojack (3.5 mm) and plug it into the Raspberry PI and download your favorite mp3's, store them all in one folder and set the path to that "folder".
+6. Get some speakers with a audiojack (3.5 mm) and plug it into the Raspberry Pi and download your favorite mp3's, store them all in one folder and set the path to that "folder".
 
 7. Enjoy! Nice and easy, Right? You can always add more features and buttons if you want but this is just a base to at least get it working, Modify the code however you want if it doesn't work the way it is intended.
 
