@@ -5,7 +5,7 @@ description: "Hello, this is where I will be documenting my project."
 ---
 
 This website will be a place where I can share the steps that I took to get to where my project is now.
-
+<hr>
 Pi Audioplayer:
    
    I learned alot from making this Audioplayer using python, (yes, it is simple) but this is the first actual computer engineering project that I have done ever so I feel this is a good beginning. I learned 
